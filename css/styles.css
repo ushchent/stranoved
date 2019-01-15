@@ -1,0 +1,256 @@
+body {
+  background-color: #F3F3EE
+}
+
+/* Главное меню категорий */
+
+#categories li:first-child { /* Добавлено */
+  margin-left: 0;
+}
+
+#categories li {
+  list-style: none;
+  display: inline;
+  margin-right: .5em;
+  font-size: 1.2em;
+  background-color: black;
+  color: white;
+	padding: .5em .7em;
+}
+
+#categories li:hover {
+	cursor: pointer;
+}
+
+#categories ul {
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 2em; /* Добавлено */
+}
+
+#categories {
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+#categories .active {
+  background-color: #52B85C;
+}
+
+h2 {
+  margin-bottom: 1em;
+}
+
+#menu_selector {
+	margin: 0;
+	padding: 0;
+}
+#menu_selector li {
+	list-style: none;
+	display: inline;
+	font-size: 1.4em;
+	border: .1em solid black;
+	padding: .4em;
+
+}
+#menu_selector li:hover {
+    cursor: pointer;
+}
+
+/* Селекторы регионов и показателей для графика и карты предпросмотра */ 
+#general select {
+  	font-size: 1em;
+	background-color: white;
+	padding: .2em;
+}
+
+#indicators {
+  min-width: 30%;
+}
+
+/* Содержимое графика */
+#general .graph_circle {
+  fill: white;
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.graph_circle:hover {
+  cursor: crosshair;
+}
+
+svg, #general {
+  margin-top: 0;
+}
+
+.area_graph {
+  fill: #BDD7E7;
+}
+
+#slider_handle {
+  fill: #3598DB;
+}
+#slider_handle:hover {
+	cursor: pointer;
+}
+
+#slider {
+	stroke: black;
+	stroke-width: 2;
+}
+
+
+
+.line_graph {
+	fill: none;
+	stroke: #2A2F4E;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-width: 2
+}
+
+tbody tr:hover {
+	background-color: lightgrey; 
+}
+
+
+#regional_data {
+  clear: both;
+  margin-bottom: 1em;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tbody tr td:first-child {  
+  text-align: left;
+}
+
+.thead_info {
+	background-color: #52B85C;
+	color: white;
+	width: .2em;
+	padding: .1em .3em;
+	margin-left: .2em;
+	float: right;
+	font-size: .8em;
+}
+
+.thead_info:hover {
+	cursor: crosshair;
+}
+
+thead tr th:first-child {
+
+}
+
+thead select {
+	background-color: white;
+}
+
+/* Уменьшаем шрифт в таблице */
+thead th {
+	padding: .2em;
+	font-size: .8em;
+	font-weight: normal;
+   cursor: pointer;
+}
+
+.normal, .number {
+  font-size: .8em;
+}
+#region-selector {
+  padding: .1em 0;
+}
+
+
+table tr {
+  border-top: 1px solid #DEE2DE;
+}
+.sorted.desc {
+    color: black;
+    border-top: 4px solid #2A2F4E;
+}
+
+.sorted.asc {
+    color: black;
+    border-bottom: 3px solid #2A2F4E;
+}
+tbody td {
+	text-align: center;
+	padding: 0.3em;
+  font-size: 0.9em;
+}
+#menu li {
+	list-style: none;
+  display: inline;
+	padding: .3em .3em;
+	margin-right: .3em;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.active {
+	background-color: #2A2F4E;
+	color: white;
+}
+
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  background-color: white;
+  pointer-events: none;
+  border: 1px solid black;
+}
+
+#thead_info_tooltip {
+  position: absolute;
+  padding: 0 2px;
+  font-size: .6em;
+  background-color: white;
+  pointer-events: none;
+  border: 1px solid black;
+}
+
+#tooltip.hidden, .invisible, #thead_info_tooltip.hidden, #general_tooltip.hidden {
+  display: none;
+}
+
+#tooltip p {
+  margin: 0;
+  font-size: 10px;
+  color: black;
+  padding: .3em;
+}
+
+.hidden {
+	display: none;
+}
+#general_tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  background-color: white;
+  pointer-events: none;
+  border: 1px solid black;
+}
+
+#general_tooltip p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+.text {
+  margin-bottom: 3em;
+}
